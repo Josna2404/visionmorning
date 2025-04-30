@@ -20,15 +20,15 @@ import org.testng.annotations.Listeners;
 
 
 
-@Listeners(com.CoverFox_utility.Listeners.class)
+//@Listeners(com.CoverFox_utility.Listeners.class)
 public class Utility {
 
 	// readData from excel
 	public static String readDataFromExcel(String sheetName, int row, int cell)
 			throws EncryptedDocumentException, IOException {
 		String screenshotName;
-		FileInputStream myfile = new FileInputStream(System.getProperty("user.dir")+"\\screenshot"+screenshotName+".png");
-		Sheet mySheet = WorkbookFactory.create(myfile).getSheet("Sheet5");
+		FileInputStream myfile = new FileInputStream(System.getProperty("user.dir") + "\\TestData\\CoverFoxData.xlsx");
+		Sheet mySheet = WorkbookFactory.create(myfile).getSheet("Sheet1");
 		String data = mySheet.getRow(row).getCell(cell).getStringCellValue();
 		Reporter.log("reading data from excel", true);
 		return data;
