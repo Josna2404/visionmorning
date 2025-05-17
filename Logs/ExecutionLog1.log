@@ -160,3 +160,27 @@
 2025-05-17 11:36:20,371 [main] INFO morning24_Coverfox - click on nextbutton in address details page
 2025-05-17 11:36:24,491 [main] INFO morning24_Coverfox - plan number are matching TC is passed 
 2025-05-17 11:36:24,707 [main] INFO morning24_Coverfox - Closing the browser
+2025-05-17 15:57:02,129 [main] INFO morning24_Coverfox - Welcome to coverfox testing
+2025-05-17 15:57:21,910 [main] INFO morning24_Coverfox - opening browser,laiunching url
+2025-05-17 15:57:21,923 [main] WARN morning24_Coverfox - Launching browser
+2025-05-17 15:57:24,993 [main] INFO morning24_Coverfox - Clicking on gender
+2025-05-17 15:57:25,276 [main] INFO morning24_Coverfox - Click on next button
+2025-05-17 15:57:27,181 [main] INFO morning24_Coverfox - handles age drop down
+2025-05-17 15:57:27,318 [main] INFO morning24_Coverfox - Click on next button in membersdetails page
+2025-05-17 15:57:28,025 [main] INFO morning24_Coverfox - enter pincode
+2025-05-17 15:57:28,264 [main] INFO morning24_Coverfox - enter mobile no
+2025-05-17 15:57:28,519 [main] INFO morning24_Coverfox - click on nextbutton in address details page
+2025-05-17 15:57:32,680 [main] INFO morning24_Coverfox - plan number are matching TC is passed 
+2025-05-17 15:57:32,919 [main] INFO morning24_Coverfox - Closing the browser
+2025-05-17 15:58:02,479 [main] INFO morning24_Coverfox - Welcome to coverfox testing
+2025-05-17 15:58:11,093 [main] INFO morning24_Coverfox - opening browser,laiunching url
+2025-05-17 15:58:11,106 [main] WARN morning24_Coverfox - Launching browser
+2025-05-17 15:58:13,256 [main] INFO morning24_Coverfox - Clicking on gender
+2025-05-17 15:58:13,787 [main] INFO morning24_Coverfox - Click on next button
+2025-05-17 15:58:16,719 [main] INFO morning24_Coverfox - handles age drop down
+2025-05-17 15:58:16,889 [main] INFO morning24_Coverfox - Click on next button in membersdetails page
+2025-05-17 15:58:17,522 [main] INFO morning24_Coverfox - enter pincode
+2025-05-17 15:58:17,738 [main] INFO morning24_Coverfox - enter mobile no
+2025-05-17 15:58:17,909 [main] INFO morning24_Coverfox - click on nextbutton in address details page
+2025-05-17 15:58:22,075 [main] INFO morning24_Coverfox - plan number are matching TC is passed 
+2025-05-17 15:58:22,315 [main] INFO morning24_Coverfox - Closing the browser
