@@ -1,4 +1,4 @@
-package com.Coverfox_Listeners;
+package com.Coverfox_listeners;
 
 import java.io.IOException;
 
@@ -6,10 +6,10 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
-import com.CoverFox_utility.Utility;
 import com.Coverfox_Base.Base;
+import com.Coverfox_Utility.Utility;
 
-public class Listeners extends Base implements ITestListener {
+public class listeners extends Base implements ITestListener {
 	
 	@Override
 	public void onTestSuccess(ITestResult result) {

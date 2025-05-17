@@ -1,4 +1,4 @@
-package com.CoverFox_utility;
+package com.Coverfox_Utility;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -18,17 +18,13 @@ import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 
 
-
-
-//@Listeners(com.CoverFox_utility.Listeners.class)
 public class Utility {
 
 	// readData from excel
 	public static String readDataFromExcel(String sheetName, int row, int cell)
 			throws EncryptedDocumentException, IOException {
-		String screenshotName;
-		FileInputStream myfile = new FileInputStream(System.getProperty("user.dir") + "\\TestData\\CoverFoxData.xlsx");
-		Sheet mySheet = WorkbookFactory.create(myfile).getSheet("Sheet1");
+		FileInputStream myfile = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\TestData\\Testing.xlsx");
+		Sheet mySheet = WorkbookFactory.create(myfile).getSheet(sheetName);
 		String data = mySheet.getRow(row).getCell(cell).getStringCellValue();
 		Reporter.log("reading data from excel", true);
 		return data;
@@ -37,10 +33,23 @@ public class Utility {
 
 	// screenshot
 	public static void takeScreenshot(WebDriver driver, String screenShotName) throws IOException {
-		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		File dest = new File("C:\\Users\\Admin\\eclipse-workspace\\NovSelenium\\Screenshot\\" + screenShotName + ".png");
-		FileHandler.copy(src, dest);
-		Reporter.log("taking screenshot, saved at" + dest, true);
+//		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//		File dest = new File(System.getProperty("user.dir") + "\\Screenshot\\" + screenShotName + ".png");
+//		FileHandler.copy(src, dest);
+//		Reporter.log("taking screenshot, saved at" + dest, true);
+		
+		   String screenshotDirPath = System.getProperty("user.dir") + "\\Screenshot\\";
+		    File screenshotDir = new File(screenshotDirPath);
+
+		    // Check and create the directory if it doesn't exist
+		    if (!screenshotDir.exists()) {
+		        screenshotDir.mkdirs();
+		    }
+
+		    File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		    File dest = new File(screenshotDirPath + screenShotName + ".png");
+		    FileHandler.copy(src, dest);
+		    Reporter.log("Taking screenshot, saved at: " + dest, true);
 
 	}
 
@@ -51,19 +60,18 @@ public class Utility {
 		Reporter.log("scrolling into view", true);
 	}
 
-	public static String readDataFromPropertiesFile1(String string) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
+	
+	
 	public static String readDataFromPropertiesFile(String key) throws IOException {
 		Properties prop = new Properties();
-		FileInputStream myFile = new FileInputStream(System.getProperty("user.dir") + "\\coverFox.properties");
+		FileInputStream myFile = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\resources\\TestData\\testdata.properties");
 		prop.load(myFile);
 		String value = prop.getProperty(key);
 		Reporter.log("reading " + key + " from properties file", true);
 
 		return value;
 	}
+	
 
 }
+
