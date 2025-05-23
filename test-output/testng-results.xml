@@ -44,22 +44,25 @@
       <![CDATA[Taking screenshot, saved at: C:\Users\shind\eclipse-workspace\morning24\Screenshot\CoverFoxTest.png]]>
     </line>
     <line>
+      <![CDATA[Test ValidateCoverfoxplan is success]]>
+    </line>
+    <line>
       <![CDATA[Closing the Browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-05-10T15:08:27 IST" name="Default suite" finished-at="2025-05-10T15:08:57 IST" duration-ms="30476">
+  <suite started-at="2025-05-23T22:13:04 IST" name="Suite" finished-at="2025-05-23T22:13:42 IST" duration-ms="38227">
     <groups>
     </groups>
-    <test started-at="2025-05-10T15:08:27 IST" name="Default test" finished-at="2025-05-10T15:08:57 IST" duration-ms="30476">
+    <test started-at="2025-05-23T22:13:04 IST" name="Test" finished-at="2025-05-23T22:13:42 IST" duration-ms="38227">
       <class name="com.Coverfox_test.CoverFoxUsingTestNG">
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:com.Coverfox_test.CoverFoxUsingTestNG@5b8dfcc1]" started-at="2025-05-10T15:08:27 IST" name="launchbrowser" finished-at="2025-05-10T15:08:43 IST" duration-ms="16081" status="PASS">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:com.Coverfox_test.CoverFoxUsingTestNG@1757cd72]" started-at="2025-05-23T22:13:04 IST" name="launchbrowser" finished-at="2025-05-23T22:13:31 IST" duration-ms="26526" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Opening Browser,launching url]]>
             </line>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method is-config="true" signature="coverfoxpreconditions()[pri:0, instance:com.Coverfox_test.CoverFoxUsingTestNG@5b8dfcc1]" started-at="2025-05-10T15:08:43 IST" name="coverfoxpreconditions" finished-at="2025-05-10T15:08:54 IST" duration-ms="11401" status="PASS">
+        <test-method is-config="true" signature="coverfoxpreconditions()[pri:0, instance:com.Coverfox_test.CoverFoxUsingTestNG@1757cd72]" started-at="2025-05-23T22:13:31 IST" name="coverfoxpreconditions" finished-at="2025-05-23T22:13:39 IST" duration-ms="8547" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[clicking on gender]]>
@@ -93,7 +96,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- coverfoxpreconditions -->
-        <test-method signature="ValidateCoverfoxplan()[pri:0, instance:com.Coverfox_test.CoverFoxUsingTestNG@5b8dfcc1]" started-at="2025-05-10T15:08:54 IST" name="ValidateCoverfoxplan" finished-at="2025-05-10T15:08:55 IST" duration-ms="378" status="PASS">
+        <test-method signature="ValidateCoverfoxplan()[pri:0, instance:com.Coverfox_test.CoverFoxUsingTestNG@1757cd72]" started-at="2025-05-23T22:13:39 IST" name="ValidateCoverfoxplan" finished-at="2025-05-23T22:13:40 IST" duration-ms="575" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[getting planNumber from Text]]>
@@ -104,9 +107,12 @@
             <line>
               <![CDATA[Taking screenshot, saved at: C:\Users\shind\eclipse-workspace\morning24\Screenshot\CoverFoxTest.png]]>
             </line>
+            <line>
+              <![CDATA[Test ValidateCoverfoxplan is success]]>
+            </line>
           </reporter-output>
         </test-method> <!-- ValidateCoverfoxplan -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.Coverfox_test.CoverFoxUsingTestNG@5b8dfcc1]" started-at="2025-05-10T15:08:55 IST" name="closebrowser" finished-at="2025-05-10T15:08:57 IST" duration-ms="2527" status="PASS">
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.Coverfox_test.CoverFoxUsingTestNG@1757cd72]" started-at="2025-05-23T22:13:40 IST" name="closebrowser" finished-at="2025-05-23T22:13:42 IST" duration-ms="2460" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing the Browser]]>
@@ -114,6 +120,6 @@
           </reporter-output>
         </test-method> <!-- closebrowser -->
       </class> <!-- com.Coverfox_test.CoverFoxUsingTestNG -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
